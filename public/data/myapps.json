@@ -1,0 +1,50 @@
+[
+  {
+    "name": "学籍异动申请",
+    "pic_path": "/pics/ico_but82.png"
+  },
+  {
+    "name": "重修报名",
+    "pic_path": "/pics/ico_but30.png"
+  },
+  {
+    "name": "考级项目报名",
+    "pic_path": "/pics/ico_but32.png"
+  },
+  {
+    "name": "教学项目报名",
+    "pic_path": "/pics/ico_but33.png"
+  },
+  {
+    "name": "未修免修申请",
+    "pic_path": "/pics/ico_apps.png"
+  },
+  {
+    "name": "大学英语学分认定申请",
+    "pic_path": "/pics/ico_but49.png"
+  },
+  {
+    "name": "毕业补考报名",
+    "pic_path": "/pics/ico_apps.png"
+  },
+  {
+    "name": "学科竞赛报名",
+    "pic_path": "/pics/ico_but5.png"
+  },
+  {
+    "name": "重修辅修标记申请",
+    "pic_path": "/pics/ico_apps.png"
+  },
+  {
+    "name": "结业换证报名",
+    "pic_path": "/pics/ico_apps.png"
+  },
+  {
+    "name": "学生资格证书申请",
+    "pic_path": "/pics/ico_but66.png"
+  },
+  {
+    "name": "校外成绩认定为校内学分",
+    "pic_path": "/pics/ico_apps.png"
+  }
+]
