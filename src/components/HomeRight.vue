@@ -2,7 +2,20 @@
     <div>
         <el-row>
             <el-col :span="12">
-                <div class="con3_1"></div>
+                <div class="con3_1">
+					<div class="con7_1"><img src="../assets/gj.jpg"></div>
+					<div class="con7_2">
+					<el-descriptions direction="vertical" :column="4" border>
+					  <el-descriptions-item label="用户名">张佳翼</el-descriptions-item>
+					  <el-descriptions-item label="手机号">18762030000</el-descriptions-item>
+					  <el-descriptions-item label="居住地" :span="2">淮安市</el-descriptions-item>
+					  <el-descriptions-item label="备注">
+					    <el-tag size="small">学校</el-tag>
+					  </el-descriptions-item>
+					  <el-descriptions-item label="联系地址">江苏省淮安市高教园区枚乘东路３号</el-descriptions-item>
+					</el-descriptions>	
+					</div>
+				</div>
             </el-col>
             <el-col :span="12">
                 <div class="con3_2">
@@ -34,7 +47,6 @@
                         <div>
                             <div class="con5" v-for="(item,index) in schedule" :key="index" @click="gotoDownloadPage(index)">
                                 <div class="con5_1">{{item.course }}</div>
-<!--                                <div class="con5_2">{{ item.date }}</div>-->
                             </div>
                         </div>
                     </div>
@@ -74,7 +86,7 @@
                     </el-tabs>
                 </div>
             </el-col>
-<!--            成绩-->
+<!--成绩-->
             <el-col :span="12">
                 <div class="con3_6">
                     <el-tabs type="border-card">
@@ -170,6 +182,7 @@ export default {
 .con3_1 {
     height: 200px;
     background-color: #FFFFFF;
+	display: flex;
     /*margin-left: 5px;*/
     /*margin-top: 5px;*/
 }
@@ -252,5 +265,16 @@ export default {
 
 .span1 {
     color: red;
+}
+.con7_1 img{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+.con7_2{
+	margin-top: 5px;
+	margin-left: 15px;
 }
 </style>

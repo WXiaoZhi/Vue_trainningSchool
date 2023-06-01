@@ -6,7 +6,22 @@
 			
 		</div>
 		<div class="main">
-			<div class="mainimgcon"><img src="../assets/2.png" /></div>
+			<div class="mainimgcon">
+				<el-carousel height="450px">
+					<el-carousel-item>
+						<img src="../assets/backg1.jpg">
+					</el-carousel-item>
+					<el-carousel-item>
+						<img src="../assets/backg2.jpg">
+					</el-carousel-item>
+					<el-carousel-item>
+						<img src="../assets/backg3.jpg">
+					</el-carousel-item>
+					<el-carousel-item>
+						<img src="../assets/2.png">
+					</el-carousel-item>
+				</el-carousel>
+			</div>
 			<div class="logincon_1">
 				<LoginComponent />
 			</div>
@@ -27,7 +42,7 @@ export default{
 
 <style scoped="scoped">
 	.con{
-		width:1200px;
+		width:1150px;
 		margin: 20px auto;	
 	}
 	.header{
@@ -56,6 +71,7 @@ export default{
 	}
 	.mainimgcon{
 		margin: 0px 7px;
+		width: 730px;
 	}
 	.footer{
 		text-align: center;

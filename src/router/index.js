@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import LoginView from '../views/LoginView.vue'
 import DownLoadView from '../views/DownLoadView.vue'
+import PerInfoView from '../views/PerInfoView.vue'
 
 Vue.use(VueRouter)
 
@@ -24,6 +25,12 @@ const routes = [
         component: DownLoadView
 
     },
+	{
+	    path: '/perInfo',
+	    name: 'perInfo',
+	    component: PerInfoView
+	
+	},
     {
         path: '/about',
         name: 'about',
