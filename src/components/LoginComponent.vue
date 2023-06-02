@@ -27,7 +27,7 @@
                 ></slide-verify>
             </div>
         </div>
-        <div class="ffcon">忘记密码?</div>
+        <div class="ffcon" @click="toForgot">忘记密码?</div>
         <div>
             <el-button type="primary" @click="toHome">登录</el-button>
         </div>
@@ -84,17 +84,8 @@ export default {
 
             // this.$router.push("/schoolhome")
         },
-        toRegister() {
-            this.$axios({
-                url: "/user/register",
-                method: "post",
-                data: {
-                    username: this.username,
-                    password: this.password
-                }
-            }).then(function (res) {
-                console.log(res)
-            })
+        toForgot(){
+            this.$router.push("/forgot")
         }
     }
 }

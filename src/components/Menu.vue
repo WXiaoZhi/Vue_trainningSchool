@@ -14,9 +14,10 @@
 				<el-menu-item index="1-9">学分兑换</el-menu-item>
 			</el-submenu>
 
-		  <el-submenu index="2">
-		    <template slot="title">信息维护</template>
-		    <el-menu-item index="2-1">学生个人信息维护</el-menu-item>
+		  <el-submenu index="2" default-active="1" mode="horizontal" @select="handleSelect">
+		    <template slot="title">我的学校</template>
+		    <el-menu-item index="2-1">学校宣传</el-menu-item>
+		    <el-menu-item index="2-2">学校主页</el-menu-item>
 		    </el-submenu>
 
 		 <el-submenu index="3">
@@ -25,7 +26,7 @@
 		   <el-menu-item index="3-2">筛选结果查询</el-menu-item>
 		   </el-submenu>
 
-		 <el-submenu index="4">
+		 <el-submenu index="4" default-active="1" mode="horizontal" @select="handleSelect">
 		   <template slot="title">信息查询</template>
 		   <el-menu-item index="4-1">查询个人信息</el-menu-item>
 		   <el-menu-item index="4-2">学籍预警查询</el-menu-item>
@@ -65,17 +66,43 @@
 
 <script>
   export default {
-    data() {
-      return {
-        activeIndex: '1',
-      };
-    },
-    methods: {
-      handleSelect(key, keyPath) {
-        console.log(key, keyPath);
-      }
-    }
-  }
+		data() {
+			return {
+				activeIndex: '1',
+			};
+		},
+		methods: {
+			// handleSelect(key, keyPath) {
+			//   console.log(key, keyPath);
+			// },
+			handleSelect(index) {
+				if (index === '4-1') {
+					this.$router.push({
+						path: '/perinfo',
+						query: {
+							index: index
+						}
+					})
+				}
+				if (index === '2-1') {
+					this.$router.push({
+						path: '/schoolInfo',
+						query: {
+							index: index
+						}
+					})
+				}
+				// if (index === '2-2') {
+				// 	this.$router.push({
+				// 		path: 'https://www.jsei.edu.cn/',
+				// 		query: {
+				// 			index: index
+				// 		}
+				// 	})
+				// }
+			}
+		}
+	}
 </script>
 
 <style scoped="scoped">

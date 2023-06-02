@@ -45,7 +45,7 @@
                             <div class="con4_2">更多</div>
                         </div>
                         <div>
-                            <div class="con5" v-for="(item,index) in schedule" :key="index" @click="gotoDownloadPage(index)">
+                            <div class="con5" v-for="(item,index) in schedule" :key="index">
                                 <div class="con5_1">{{item.course }}</div>
                             </div>
                         </div>

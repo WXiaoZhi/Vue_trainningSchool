@@ -30,7 +30,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 如何引入验证码详见[gitee](https://gitee.com/monoplasty/vue-monoplasty-slide-verify)
 
+### v0.5完善
 
-
-
-
+进一步完善 为实训落下眉目

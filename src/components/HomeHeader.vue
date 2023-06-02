@@ -28,11 +28,20 @@ export default{
 	methods:{
 		logout(command){
 			console.log(command)
+			if(command==="a"){
+				localStorage.removeItem("userinfo")
+				this.$router.push("/login")
+			}
+			if(command==="b"){
+				localStorage.removeItem("userinfo")
+				this.$router.push("/forgot")
+			}
 			if(command==="c"){
 				localStorage.removeItem("userinfo")
 				this.$router.push("/login")
 			}
 		}
+
 	}
 }
 </script>
